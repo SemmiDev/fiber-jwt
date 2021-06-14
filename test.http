@@ -1,0 +1,34 @@
+### LOGIN
+POST http://localhost:8080/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email" : "sammidev@gmail.com",
+  "password" : "sammidev"
+}
+
+### LOGOUT
+POST http://localhost:8080/api/v1/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6IjhmNWM0NjA5LTZjYmQtNDBmNS04YzZjLTFhN2FkNTAyMTlhYiIsImF1dGhvcml6ZWQiOnRydWUsImV4cCI6MTYyMzY2NzA0NywidXNlcl9pZCI6MX0.SRRgqYe6WkKokpEJzrL0idDscx1DYn4NNnTxuNQEOOQ
+Accept: application/json
+
+### TODO
+POST http://localhost:8080/api/v1/todo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6IjFmMmNkNTZlLTRhNDYtNDcyOC04ZGYxLTI1M2NhNmJlNGUxZiIsImF1dGhvcml6ZWQiOnRydWUsImV4cCI6MTYyMzY2NzI4NywidXNlcl9pZCI6MX0.PqyGysxXi9VlJ2kUsjOQENjD34Y43Wa8l7P6QXl0aPg
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "merindukan izzah dei"
+}
+
+### NEW TOKEN USING REFRESH TOKEN
+POST http://localhost:8080/api/v1/refresh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6IjhmNWM0NjA5LTZjYmQtNDBmNS04YzZjLTFhN2FkNTAyMTlhYiIsImF1dGhvcml6ZWQiOnRydWUsImV4cCI6MTYyMzY2NzA0NywidXNlcl9pZCI6MX0.SRRgqYe6WkKokpEJzrL0idDscx1DYn4NNnTxuNQEOOQ
+Accept: application/json
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjQyNzA5NzcsInJlZnJlc2hfdXVpZCI6IjgwZGJhMjMxLWZkYTQtNDA0Mi1hNjAwLWYyNGE4N2ZkMzNiMSsrMSIsInVzZXJfaWQiOjF9.VY9fiax3hIxeAo_fcxyUlJ2WQv5itBqrWHqMKsRtkTI"
+}
